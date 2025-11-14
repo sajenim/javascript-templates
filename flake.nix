@@ -11,7 +11,6 @@
     inputs.flake-parts.lib.mkFlake {inherit inputs;} {
       systems = import inputs.systems;
       imports = [
-        ./nix/modules/devshell.nix
         ./nix/modules/template.nix
       ];
     };
