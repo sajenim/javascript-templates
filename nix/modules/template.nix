@@ -24,7 +24,6 @@ in {
             placeholder = "my-project";
           }
         ];
-        exclude = ["bun.lockb"];
       };
 
       javascript-nextjs = {
@@ -36,7 +35,6 @@ in {
             placeholder = "my-nextjs-app";
           }
         ];
-        exclude = ["bun.lockb"];
       };
     };
   };
