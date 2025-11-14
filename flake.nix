@@ -1,5 +1,5 @@
 {
-  description = "Nix template for JavaScript projects, powered by Bun";
+  description = "Nix templates for JavaScript projects, powered by Bun";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";

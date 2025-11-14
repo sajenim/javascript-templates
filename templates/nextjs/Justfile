@@ -1,0 +1,66 @@
+# List available commands
+default:
+    @just --list
+
+# Start development server with hot reload
+dev:
+    bun run dev
+
+# Add a package dependency
+add package:
+    bun add {{package}}
+
+# Add a dev dependency
+add-dev package:
+    bun add -d {{package}}
+
+# Remove a package dependency
+remove package:
+    bun remove {{package}}
+
+# Build for production
+build:
+    bun run build
+
+# Start production server
+start:
+    bun run start
+
+# Install dependencies
+install:
+    bun install
+
+# Update flake inputs
+update:
+    nix flake update
+
+# Upgrade package dependencies
+upgrade:
+    bun update
+
+# Clean build artifacts and dependencies
+clean:
+    rm -rf .next node_modules bun.lockb
+
+# Format code with prettierd
+format:
+    prettierd --write .
+
+# Check formatting without making changes
+format-check:
+    prettierd --check .
+
+# Lint code with Next.js ESLint
+lint:
+    bun run lint
+
+# Lint and auto-fix issues
+lint-fix:
+    bun run lint -- --fix
+
+# Type check with TypeScript
+typecheck:
+    tsc --noEmit
+
+# Check formatting, linting, and types
+check: format-check lint typecheck
