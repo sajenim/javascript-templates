@@ -5,12 +5,12 @@ in {
     templates = {
       default = {
         description = "Minimal JavaScript template with Vite and Bun";
-        path = "${root}/templates/vanilla";
+        path = "${root}/vanilla";
       };
 
       nextjs = {
         description = "Next.js TypeScript template with App Router";
-        path = "${root}/templates/nextjs";
+        path = "${root}/nextjs";
       };
     };
 
