@@ -22,7 +22,6 @@ in {
         [
           bun
           nodejs
-          typescript
           eslint
           just
           prettierd

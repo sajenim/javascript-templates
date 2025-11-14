@@ -12,7 +12,6 @@
       systems = import inputs.systems;
       imports = [
         ./nix/modules/devshell.nix
-        ./nix/modules/template.nix
       ];
     };
 }
