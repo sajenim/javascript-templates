@@ -15,7 +15,7 @@ in {
     };
 
     om.templates = {
-      default = {
+      vanilla = {
         template = templates.default;
         params = [
           {

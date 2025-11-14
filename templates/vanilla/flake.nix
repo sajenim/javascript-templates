@@ -1,5 +1,5 @@
 {
-  description = "Nix templates for JavaScript projects, powered by Bun";
+  description = "Vanilla JavaScript project with Vite, Bun, and Nix";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";

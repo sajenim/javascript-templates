@@ -1,5 +1,5 @@
 {
-  description = "Nix templates for JavaScript projects, powered by Bun";
+  description = "Next.js TypeScript project with App Router, Bun, and Nix";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
