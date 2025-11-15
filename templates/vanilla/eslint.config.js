@@ -1,13 +1,15 @@
-export default [
+import { defineConfig, globalIgnores } from 'eslint/config';
+
+const eslintConfig = defineConfig([
+  globalIgnores(['dist/**', 'build/**', 'node_modules/**']),
   {
-    ignores: ["dist", "build", "node_modules"],
-  },
-  {
-    files: ["**/*.js"],
+    files: ['**/*.js'],
     languageOptions: {
-      ecmaVersion: "latest",
-      sourceType: "module",
+      ecmaVersion: 'latest',
+      sourceType: 'module',
     },
     rules: {},
   },
-];
+]);
+
+export default eslintConfig;

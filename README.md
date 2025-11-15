@@ -39,6 +39,7 @@ TypeScript template with App Router for modern web applications.
 - Next.js 15 with App Router
 - React 19
 - TypeScript
+- Tailwind CSS (utility-first styling)
 - Optimized for Vercel deployment
 
 ## Shared Foundation
@@ -153,9 +154,8 @@ All templates provide minimal, sensible defaults. Customize as needed:
 **Next.js:**
 
 - Configure Next.js in `next.config.js`
-- Customize ESLint rules in `.eslintrc.json`
+- Customize ESLint rules in `eslint.config.mjs`
 - Adjust TypeScript settings in `tsconfig.json`
-- Extend ESLint config for stricter rules
 
 **Both templates:**
 
@@ -165,17 +165,18 @@ All templates provide minimal, sensible defaults. Customize as needed:
 
 ## Template Comparison
 
-| Feature            | Vanilla | Next.js |
-| ------------------ | ------- | ------- |
-| Framework          | None    | Next.js |
-| Language           | JS      | TS      |
-| Bundler            | Vite    | Next.js |
-| Client-side only   | ✓       | ✗       |
-| Server-side API    | ✗       | ✓       |
-| Static generation  | ✓       | ✓       |
-| Type checking      | ✗       | ✓       |
-| React components   | ✗       | ✓       |
-| File-based routing | ✗       | ✓       |
+| Feature            | Vanilla     | Next.js     |
+| ------------------ | ----------- | ----------- |
+| Framework          | None        | Next.js     |
+| Language           | JS          | TS          |
+| Bundler            | Vite        | Next.js     |
+| Styling            | Vanilla CSS | Tailwind v4 |
+| Client-side only   | ✓           | ✗           |
+| Server-side API    | ✗           | ✓           |
+| Static generation  | ✓           | ✓           |
+| Type checking      | ✗           | ✓           |
+| React components   | ✗           | ✓           |
+| File-based routing | ✗           | ✓           |
 
 ## Acknowledgments
 

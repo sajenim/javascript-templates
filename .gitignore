@@ -1,16 +1,3 @@
-# Dependencies
-node_modules/
-bun.lockb
-
-# Build output
-dist/
-build/
-.next/
-out/
-
-# TypeScript
-*.tsbuildinfo
-next-env.d.ts
-
-# Direnv
+# Nix
 .direnv/
+result

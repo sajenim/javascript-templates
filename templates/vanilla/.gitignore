@@ -1,0 +1,23 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+build
+
+# Nix
+.direnv
+result
+
+# Misc
+.DS_Store
+*.log
+*.pem
+
+# Bun
+bun.lockb
+
+# Environment
+.env
+.env.local
+.env*.local
